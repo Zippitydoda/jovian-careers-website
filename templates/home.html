@@ -9,19 +9,28 @@
         height: 360px;
         width:100%;
         object-fit:cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+          <img class="img-fluid" id='banner' src="https://jovian-careers-website.zippitydoda.repl.co/static/banner.jpeg">
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-      <img class="img-fluid" id='banner' src="https://jovian-careers-website.zippitydoda.repl.co/static/banner.jpeg" >
-        <h2 class="text-center" > About Jovian</h2>
-        <p class="lead">
+      <h1 class="text-center mt-2 mb-4">
+        {{company_name}} Careers
+      </h1>
+      <div class="row" style="marigin-bottom:16px;">
+        <div class="col-md-6">  
+      <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies ut urna a varius. Quisque sed augue ut metus porta tempor. Aenean vitae dolor ac dolor iaculis bibendum. Etiam rutrum id mi eu pellentesque. Nulla non erat sit amet enim molestie varius in nec ipsum. Cras ac ante sapien. Vestibulum rhoncus aliquam ante, eu dignissim est fringilla a.
-  Nunc commodo nisi eget porta fermentum. Duis pharetra cursus euismod. Proin laoreet est suscipit, malesuada mauris pulvinar, dictum orci. Phasellus fermentum neque lacus, ut euismod orci venenatis nec. Aliquam eu dolor convallis, porttitor quam at, aliquet ligula. Ut auctor a nulla at maximus. Suspendisse potenti. Sed in porta libero. Integer blandit ante quis odio convallis viverra. Pellentesque in est a ante condimentum cursus. Donec vel euismod eros. Curabitur aliquet nunc quis risus tincidunt placerat. Nunc malesuada lobortis auctor. Vivamus ac dapibus lectus, ut iaculis libero.
+
   
       </p>
+        </div>
+      <div class="d-none d-md-block col-md-6">
+        <img src="/static/workers.jpg" style="height:320px; border-radius: 4px;">
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       
       <div>
@@ -32,8 +41,8 @@
       
       <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p class="mt-4"><b>Copyright 2022, Jovian</b></p>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>  
